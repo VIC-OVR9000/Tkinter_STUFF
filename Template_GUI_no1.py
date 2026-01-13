@@ -62,8 +62,8 @@ def IMPORT_DATA(ticker, start0, end0 , intvl):
             ## place insert 'Index' code here...
             print(DF_data)
             print("df type is -> ",type(DF_data))
-            DF_data.to_csv('D:\\Python_DOCS\\'+ticker+'.csv', index=True)
-            return pd.read_csv('D:\\Python_DOCS\\'+ticker+'.csv')
+            DF_data.to_csv('{file_path}'+ticker+'.csv', index=True)
+            return pd.read_csv('{file_path}'+ticker+'.csv')
 
                 
 
